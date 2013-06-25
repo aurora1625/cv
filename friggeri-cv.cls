@@ -48,15 +48,16 @@
 
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-
+\RequirePackage{xeCJK}
 \newfontfamily\bodyfont[]{Helvetica Neue}
 \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
 \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setCJKmainfont[BoldFont={SimHei}, ItalicFont={Adobe Kaiti Std}]{Adobe Heiti Std}
 
-\setmathfont{XITS Math}
+%\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
