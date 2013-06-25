@@ -94,7 +94,7 @@
 \RequirePackage{parskip}
 
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1#2#3#4{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
@@ -104,7 +104,7 @@
         green\or%
         purple\else%
         headercolor\fi%
-    } #1#2#3%
+    } #1#2#3#4%
   }%
   \stepcounter{colorCounter}%
 }
