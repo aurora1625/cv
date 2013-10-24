@@ -55,7 +55,7 @@
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
-\setCJKmainfont[BoldFont={SimHei}, ItalicFont={Adobe Kaiti Std}]{Adobe Heiti Std}
+\setCJKmainfont[BoldFont={Adobe Heiti Std}, ItalicFont={Adobe Kaiti Std}]{Adobe Heiti Std}
 
 %\setmathfont{XITS Math}
 

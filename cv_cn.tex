@@ -1,4 +1,4 @@
-%!TEX TS-program = xelex
+%!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
 \addbibresource{bibliography.bib}
 
@@ -56,18 +56,44 @@
     {数学系}
 \end{entrylist}
 
+
+\section{发表期刊}
+
+
+\printbibsection{article}{期刊发表文章}
+\begin{refsection}
+  \nocite{*}
+  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+\end{refsection}
+\begin{refsection}
+  \nocite{*}
+  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+\end{refsection}
+\printbibsection{misc}{other publications}
+\printbibsection{report}{research reports}
+
 \section{基金项目}
 
 \begin{entrylist}
+  \entry
+    {2014至今}
+    {国家自然科学基金面上项目, 61370070, 75万}
+    {主要技术负责人，项目统筹}
+    {\emph{大数据环境下稀疏主题模型理论及其应用研究}}
+  \entry
+    {12.11-13.03}
+    {国家自然科学基金面上项目, 61370070, 75万}
+    {独立撰写申请书}
+    {\emph{大数据环境下稀疏主题模型理论及其应用研究}}
   \entry
     {2013至今}
     {国家自然科学基金面上项目, 61272369, 80万}
     {主要技术负责人，项目统筹}
     {\emph{排序主题模型及其应用研究}}
   \entry
-    {12.11-13.03}
+    {11.11-12.03}
     {国家自然科学基金面上项目, 61272369, 80万}
-    {独立撰写}
+    {独立撰写申请书}
     {\emph{排序主题模型及其应用研究}}
   \entry
     {2011-2013}
@@ -75,7 +101,12 @@
     {主要技术负责人，项目统筹}
     {\emph{基于半监督学习和集成学习的文本分类方法研究}}
   \entry
-    {03.2010}
+    {2010.6}
+    {大连市科技计划项目}
+    {参与项目申请}
+    {基于图像挖掘的冠心病循证医疗辅助诊断系统}
+  \entry
+    {2010.3}
     {国家自然科学基金面上项目, 61073133, 32万}
     {参与撰写}
     {\emph{基于半监督学习和集成学习的文本分类方法研究}}
@@ -96,9 +127,23 @@
     {\emph{GIS方法在科学基金统计分析中的应用研究}}
 \end{entrylist}
 
-\section{其他项目}
-
+\section{其他项目以及工作}
 \begin{entrylist}
+  \entry
+    {2010至今}
+    {审稿}
+    {核心期刊}
+    {计算机工程与应用}
+  \entry
+    {2009-2010}
+    {系统生物学研究所合作项目}
+    {参与研究，合作联系}
+    {}
+  \entry
+    {2010-2011}
+    {合作项目，机电学院}
+    {前期调研，需求分析，系统设计，算法设计}
+    {知识管理在虚拟装配中的应用}
   \entry
     {10.12-11.03}
     {海尔统帅电视销售决策支持技术项目推动}
@@ -124,22 +169,57 @@
     {大连软件外包产业研究}
     {主要技术负责人}
     {}
+\end{entrylist}
+
+\section{指导研究生、本科生毕业设计}
+\begin{entrylist}
+  \entry
+    {2013}
+    {李庆丰}
+    {导师：鲁明羽}
+    {基于主题模型的多文档自动文摘方法研究}
+  \entry
+    {2013}
+    {黄泽明}
+    {导师：鲁明羽}
+    {基于主题模型的学术论文推荐系统研究}
+  \entry
+    {2013}
+    {刘文强}
+    {导师：付英亮}
+    {语音识别技术在智能家居中的研究与应用}
+  \entry
+    {2012}
+    {李平}
+    {导师：付英亮}
+    {集成学习中差异性控制方法研究}
+  \entry
+    {2012}
+    {周帅}
+    {导师：鲁明羽}
+    {基于数据挖掘技术的犯罪相关因素分析}
+  \entry
+    {2011}
+    {钱新宇}
+    {导师：鲁明羽}
+    {基于实例推理的虚拟装配序列规划研究}
+  \entry
+    {2011}
+    {王询}
+    {导师：鲁明羽}
+    {面向航运领域的文本分类系统}
+  \entry
+    {2010}
+    {洪锦东}
+    {导师：鲁明羽}
+    {基于程序挖掘的构件组装建模方法及工具研究}
+  \entry
+    {2010}
+    {徐东坤}
+    {导师：鲁明羽}
+    {面向互联网的构件获取技术研究}
 
 \end{entrylist}
 
-\section{publications}
-
-
-\printbibsection{article}{article in peer-reviewed journal}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-\end{refsection}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-\end{refsection}
-\printbibsection{misc}{other publications}
-\printbibsection{report}{research reports}
 
 \end{document}

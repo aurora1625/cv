@@ -1,0 +1,233 @@
+%!TEX TS-program = xelatex
+
+\documentclass[9pt]{article}
+\usepackage{xeCJK}
+\newfontfamily\bodyfont[]{Helvetica Neue}
+\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
+\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setCJKmainfont[BoldFont={SimHei}, ItalicFont={Adobe Kaiti Std}]{Adobe Kaiti Std}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }
+	{\end{changemargin}
+}
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{肖智博}{xiaozhibo@gmail.com}{186 426 22311}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+% \header{Objective}
+
+% \begin{body}
+% 	\vspace{14pt}
+% 	To get a job
+% \end{body}
+
+% \smallskip
+% \medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{\Large{教育经历}}
+
+\begin{body}
+   \vspace{14pt}
+	\textbf{博士}{} \hfill \emph{2009.9-2014.6}{} \\
+	\emph{排序主题模型}, 信息科学技术学院，大连海事大学{} \\
+  \medskip
+	% \vspace{14pt}
+	\textbf{硕士}{} \hfill \emph{2007.9-2009.7}{} \\
+	\emph{面向科学基金管理的数据仓库和展现工具研究}, 信息科学技术学院，大连海事大学{} \\
+  \medskip
+	\textbf{本科} \hfill \emph{2003.9-2007.7} \\
+	数学系，大连海事大学\\
+\end{body}
+
+\smallskip
+\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{\Large{发表的期刊论文}}
+\begin{body}
+	\vspace{14pt}
+	1. \textbf{Zhi-Bo Xiao}, Feng Che, Enuo Miao, and Mingyu Lu. “Increasing Serendipity of Recommender System with Ranking Topic Model.” Applied Mathematics \& Information Sciences. 2014, to appear. \textbf{SCI}\\
+	\smallskip
+	2. \textbf{Zhi-Bo Xiao}, Feng Che, Enuo Miao, and Mingyu Lu. “CorrRank: Correlation Based Ranking Topic Model.” Journal of Computational Information Systems. 2014,5. \textbf{EI}\\
+	\smallskip
+	3. \textbf{Zhi-Bo Xiao}, Ping Li, Yingliang Fu, and Mingyu Lu. “Does More Randomness Help Increasing Diversity in Ensemble Learning?.” Journal of Convergence Information Technology 7 (19): 309–318. \textbf{EI}\\
+	\smallskip
+	4. \textbf{肖智博}，吴镝，车丰，鲁明羽. CorrSum:基于排序主题模型的多文档自动文摘算法. 模式识别与人工智能. 已录用\\
+	\smallskip
+	5. Jun, Wu, \textbf{Zhi-Bo Xiao}, Wang Huai-Shuai, and Hong Shen. “Learning with Both Unlabeled Data and Query Logs for Image Search.” Computers \& Electrical Engineering. \textbf{SCI}\\
+	\smallskip
+	6. Lin, Zheng-Kui, Jun Wu, \textbf{Zhi-Bo Xiao}, Jing Duan, and Ming-Yu Lu. “Unified Learning Paradigm for Image Retrieval.” International Journal of Innovative Computing Information and Control 7 (8): 4977–4987. \textbf{SCI}\\
+	\smallskip
+	7. 刘娜,\textbf{肖智博},鲁明羽. 基于形态学的单词-文档谱聚类方法. 南京大学学报(自然科学版). 2012 (02)\\
+	\smallskip
+	8. 刘娜,\textbf{肖智博},鲁明羽. 基于模糊K-调和均值的单词-文档谱聚类方法. 控制与决策. 2012 (04)\\
+	\smallskip
+	9. 刘权,\textbf{肖智博},鲁明羽.   面向科学基金管理数据数据仓库概念模型设计. 计算机工程与应用. 2009 (36)
+
+\end{body}
+
+\smallskip
+\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{\Large{参与过的基金项目}}
+
+\begin{body}
+	\vspace{14pt}
+	大数据环境下稀疏主题模型理论及其应用研究(国家自然科学基金面上项目，61370070)\\ 资助金额：75万，资助时间：2014年至2017年。\\
+	\textbf{独立撰写基金申请书，项目管理，算法研制}\\
+	\medskip
+	排序主题模型及其应用研究(国家自然科学基金面上项目，61272369)\\	资助金额：80万，资助时间：20113年至2016年。\\
+	\textbf{独立撰写基金申请书，项目管理，算法研制}\\
+	\medskip
+	基于半监督学习和集成学习的文本分类方法研究(国家自然科学基金面上项目，61073133)\\ 资助金额：32万，资助时间：2011年至2013年。\\
+	\textbf{参与撰写申请书，主要技术负责人，项目统筹}\\
+	\medskip
+	GIS方法在科学基金统计分析中的应用研究(国家自然科学基金专项项目, J0724003)\\
+	资助金额：8万，资助时间：2004年。\\
+	\textbf{主要技术负责人}\\
+	\medskip
+	基于图像挖掘的冠心病循证医疗辅助诊断系统(大连市科技计划项目)\\
+	\textbf{参与项目申请}
+\end{body}
+
+\smallskip
+\medskip
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{\Large{参与的横向课题及其他工作}}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{审稿人}，《计算机科学》 \hfill{} \emph{2010年至今}\\
+	\smallskip
+	\textbf{审稿人}，《计算机工程与应用》 \hfill{} \emph{2010年至今}\\
+	\smallskip
+	\textbf{主要项目负责人}，海尔统帅电视销售决策支持技术项目推动 \hfill{} \emph{2010.12 - 2011.03} \\
+	\smallskip
+	\textbf{主要技术负责人}， 上海通用汽车公司客户行为分析数据挖掘项目\hfill {} \emph{2010年 11月 - 2010年 12月}\\
+	\smallskip
+	\textbf{主要技术负责人，联络人}，知识管理在虚拟装配中的应用，大连海事大学机电学院合作项目 \\\hfill{}  \emph{2010年 9月 - 2011年 9月}\\
+	\smallskip
+	\textbf{参与研究}，大连海事大学系统生物学研究所合作项目 \hfill{} \emph{2009年 - 2012年}\\
+	\smallskip
+    \textbf{培训讲师}	，赛科公司智能巡检系统 \hfill{} \emph{2008年 4 - 5月}\\
+    \smallskip
+    \textbf{主要技术负责人}，天津港辅助决策系统 \hfill{} \emph{2007年 9 - 12月} \\
+    \smallskip
+    \textbf{主要技术负责人}，大连软件外包产业研究 \hfill{} \emph{2007年 7月} \\
+\end{body}
+
+\smallskip
+\medskip
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{\Large{独立指导的研究生}}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{车丰}，基于排序主题模型和众包策略的学术论文推荐系统研究 \hfill{} \emph{2014年毕业}\\
+	\smallskip
+	\textbf{赵云}，主题模型的评价方法研究 \hfill{} \emph{2014年毕业}\\
+	\smallskip
+	\textbf{乔桢}，基于半监督学习的集成学习多样性研究 \hfill{} \emph{2014年毕业}\\
+	\smallskip
+	\textbf{徐宇婷}，基于排序主题模型和众包策略的多文档自动文摘方法研究 \hfill{} \emph{2014年毕业}\\
+	\smallskip
+	\textbf{李庆丰}，基于主题模型的多文档自动文摘方法研究 \hfill{} \emph{2013年毕业}\\
+	\smallskip
+	\textbf{黄泽明}，基于主题模型的学术论文推荐系统研究 \hfill{} \emph{2013年毕业}\\
+	\smallskip
+	\textbf{刘文强}，语音识别技术在智能家居中的研究与应用 \hfill{} \emph{2013年毕业}\\
+	\smallskip
+	\textbf{李平}，集成学习中差异性控制方法研究 \hfill{} \emph{2012年毕业}\\
+	\smallskip
+	\textbf{周帅}，基于数据挖掘技术的犯罪相关因素分析 \hfill{} \emph{2012年毕业}\\
+	\smallskip
+	\textbf{钱新宇}，基于实例推理的虚拟装配序列规划研究 \hfill{} \emph{2011年毕业}\\
+	\smallskip
+	\textbf{王询}，面向航运领域的文本分类系统 \hfill{} \emph{2011年毕业}\\
+	\smallskip
+	\textbf{洪锦东}，基于程序挖掘的构件组装建模方法及工具研究 \hfill{} \emph{2010年毕业}\\
+	\smallskip
+\end{body}
+
+\end{document}
